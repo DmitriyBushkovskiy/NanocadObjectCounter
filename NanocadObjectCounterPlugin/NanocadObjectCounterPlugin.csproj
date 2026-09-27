@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        
+        <NCadSDK>C:\Program Files\Nanosoft\nanoCAD x64 25.0\bin</NCadSDK>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="hostdbmgd">
+            <HintPath>$(NCadSDK)\hostdbmgd.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="hostmgd">
+            <HintPath>$(NCadSDK)\hostmgd.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+</Project>
